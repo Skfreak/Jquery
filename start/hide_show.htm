@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../jquery-1.11.3.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#1").click(function(){
+        $(".sk").hide(100);//100 in parameter value specifies how long it takes to hide/show elements
+    });
+    $("#2").click(function(){
+        $(".sk").show(100);
+    });
+});
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p class="sk">This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button id=1>Click me to hide first para</button>
+<button id=2>Click me to show first para</button>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../jquery-1.11.3.min.js"></script>
+<script>
+    //on method is used to attach multiple events to the same element
+$(document).ready(function(){
+    $("#23").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lightgray");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "lightblue");
+        }, 
+        click: function(){
+            $(this).css("background-color", "yellow");
+        }  
+    });
+});
+</script>
+</head>
+<body>
+
+<p id=23>Click or move the mouse pointer over this paragraph.</p>
+
+</body>
+
+</html>
